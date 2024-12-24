@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-&=8$2ttjlq92%%yc!%$u9ukx@xkrn6w3dr2ztqr@*ga7px9=hi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['CityAirQuality.onrender.com', '127.0.0.1:8000']
 
 
 # Application definition
@@ -115,7 +115,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# Path to collect all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# URLs to serve static files
 STATIC_URL = '/static/'
+
+# Add static files directory if needed
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
