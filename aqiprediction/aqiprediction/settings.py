@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-&=8$2ttjlq92%%yc!%$u9ukx@xkrn6w3dr2ztqr@*ga7px9=hi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['CityAirQuality.onrender.com', '127.0.0.1:8000', 'https://aqiprediction-opox.onrender.com']
+ALLOWED_HOSTS = ['CityAirQuality.onrender.com', '127.0.0.1', 'qiprediction-opox.onrender.com']
 
 
 # Application definition
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'aqiapp',
+    'aqiprediction.aqiapp',
 ]
 
 MIDDLEWARE = [
