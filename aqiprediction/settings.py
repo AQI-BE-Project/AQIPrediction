@@ -86,8 +86,8 @@ DATABASES = {
         'NAME': 'aqi_db',
         'USER': 'aqi_user',
         'PASSWORD': 'stpD@0nq6l#mI%a',
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'HOST': 'https://aqiprediction-opox.onrender.com',
+        'PORT': '5432',
     }
 }
 
