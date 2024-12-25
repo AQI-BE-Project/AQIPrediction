@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-&=8$2ttjlq92%%yc!%$u9ukx@xkrn6w3dr2ztqr@*ga7px9=hi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'aqiprediction-opox.onrender.com']
 
