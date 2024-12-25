@@ -12,6 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 print("Current Working Directory: ", os.getcwd())
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aqiprediction.aqiprediction.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aqiprediction.settings')
 
 application = get_wsgi_application()
