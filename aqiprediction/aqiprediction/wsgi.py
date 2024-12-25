@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
+print("Current Working Directory: ", os.getcwd())
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aqiprediction.aqiprediction.settings')
 
